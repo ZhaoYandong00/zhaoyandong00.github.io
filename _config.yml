@@ -55,6 +55,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      layout: "post"
       toc: true    #目录生成器
       mathjax: true #数学公式
       mermaid: false #流程图
