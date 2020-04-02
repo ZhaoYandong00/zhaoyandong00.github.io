@@ -1,0 +1,96 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+
+title: ZYD Blog
+email: 
+description: This is ZYD's blog site
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://zhaoyandong.ml" 
+github_username:  zhaoyandong00
+# markdown
+markdown: kramdown
+kramdown:
+ footnote_nr: 1
+ entity_output: as_char
+ # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+ syntax_highlighter: rouge
+ syntax_highlighter_opts:
+  # Use existing pygments syntax highlighting css
+  css_class: 'highlight'
+ span:
+  line_numbers: false
+ block:
+  line_numbers: true
+  start_line: 1
+
+highlighter: rouge
+
+author:
+  name:           ZYD
+  picture:        
+  email:          
+  description:    
+  github:         https://github.com/zhaoyandong00
+  clustrmap:      87hfQmj_jXpYSg7znLJKy-SmYXU77n5FiwcnAiiCGVI
+  baidupv:        ff98ee8574d00f67dfedb5fd35de77bb
+  disqus:         f843ea51c4883ca8e2d435cfa3ed7b6b
+
+defaults:
+  -
+    scope:  
+      path: ""
+      type: "posts"
+    values:
+      toc: true    #目录生成器
+      mathjax: true #数学公式
+      mermaid: false #流程图
+      highlight: false #高亮
+      numbering: true #文章标号
+      status: Completed #状态
+      
+
+exclude:
+ - LICENSE.md
+ - README.md
+ - "*.cdf"
+ - "*.nb"
+ - "*.bk"
+ - "*.draft.md"
+
+# Build settings
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

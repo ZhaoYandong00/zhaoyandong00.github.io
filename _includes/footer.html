@@ -1,0 +1,14 @@
+<!-- 底部 -->
+<footer>
+   <p style="margin-left: auto; margin-right: auto;">
+      &copy; {{ site.posts[-1].date | date: '%Y' }}-{{ site.time | date: '%Y' }}, {{ site.author.name }}.
+      This site is open source.
+   </p>
+   <span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+   {% if include.post==true %}
+   <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span>次</span>
+   {% endif %}
+</footer>
+
+<link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/footer.css">
+
