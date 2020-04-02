@@ -32,6 +32,16 @@ html, body {
   width: 100%;
   height: 100%;
 }
+body{
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  flex:0 0 auto;
+}
+.offline{
+  flex:1 0 auto;
+}
 
 h1 {text-align:center;}
 h2 {text-align:center;}
@@ -51,7 +61,6 @@ p {text-align:center;}
 .hidden {
   display: none;
 }
-
 
 /* Offline page */
 
