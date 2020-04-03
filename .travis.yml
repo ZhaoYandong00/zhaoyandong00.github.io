@@ -2,7 +2,6 @@ language: ruby
 sudo: false
 before_install: 
  - gem install codecov
- - gem install coveralls
 install:
  - gem install jekyll
  - gem install jekyll-seo-tag
@@ -10,5 +9,4 @@ script:
  - jekyll build
 
 after_success:
-  - bash <(curl -Ls https://coverage.codacy.com/get.sh) 
   - bash < (curl -s https://codecov.io/bash)

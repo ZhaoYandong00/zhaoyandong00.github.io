@@ -20,7 +20,8 @@ description: This is ZYD's blog site
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zhaoyandong.ml" 
-github_username:  zhaoyandong00
+github_username:  Zhaoyandong00
+github_repo: zhaoyandong00.github.io
 # markdown
 markdown: kramdown
 kramdown:
