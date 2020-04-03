@@ -9,6 +9,5 @@ jobs:
     executor: ruby/default
     steps:
       - checkout
-      - run:
-        - gem install jekyll-seo-tag
-        - jekyll build
+      - run: gem install jekyll-seo-tag
+      - run: jekyll build
