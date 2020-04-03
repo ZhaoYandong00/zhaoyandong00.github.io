@@ -76,7 +76,6 @@ plugins:
   - jekyll-seo-tag
 
 
-CODACY_PROJECT_TOKEN: 2cc7a73638c14d7382d9cf0ac41e9b77
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

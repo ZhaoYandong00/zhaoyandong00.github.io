@@ -1,6 +1,6 @@
 language: ruby
 sudo: false 
-
+export CODACY_PROJECT_TOKEN=2cc7a73638c14d7382d9cf0ac41e9b77
 before_install: 
  - gem install codecov
 install:
