@@ -2,6 +2,7 @@
 title:  Jekyll 在windows下的安裝
 categories:  Jekyll githubpages
 tags: Jekyll  blog  githubpages
+highlight:  true
 ---
 #   安装Ruby 环境
 
@@ -22,15 +23,18 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/msys/$arch 加入mirrorlist.
 ## 执行在命令行执行ridk install（如果安装时选择了不加入系统环境变量的，去Ruby安装目录的bin之下执行），选择3 msys2+MINGW 一路回车至结束；
 
 ## 更新gem源：
-
+`
 gem sources --add https://mirrors.aliyun.com/rubygems/ --remove https://rubygems.org/
+`
 
 ## 安装Bundler和Jekyll
-`sudo gem install bundler jekyll`
+`
+sudo gem install bundler jekyll
+`
 
 ## 测试安装
 ```
- ruby -v
+ruby -v
 gem -v
 bundler -v
 jelyll -v
