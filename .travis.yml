@@ -1,2 +1,5 @@
 language: ruby
 
+script:
+- bundle install
+- bundle exec jekyll build
