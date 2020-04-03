@@ -1,6 +1,13 @@
 language: ruby
+sudo: false #有定制化开发环境需要，默认false，不开启容器，编译效率高
+
+before_install: 
+ - gem install codecov
 install:
  - gem install jekyll
  - gem install jekyll-seo-tag
 script:
  - jekyll build
+
+after_success:
+  - codecov
