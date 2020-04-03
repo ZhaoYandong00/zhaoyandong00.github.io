@@ -3,7 +3,7 @@ sudo: false
 
 before_install: 
  - gem install codecov
- - pip insyall coveragepy
+ - pip install coveragepy
 install:
  - gem install jekyll
  - gem install jekyll-seo-tag
