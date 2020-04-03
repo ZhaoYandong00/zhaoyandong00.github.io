@@ -1,4 +1,6 @@
 language: ruby
 
 script:
+- gem update --system
+- bundle install
 - jekyll build
