@@ -1,13 +1,14 @@
 language: ruby
-sudo: false #有定制化开发环境需要，默认false，不开启容器，编译效率高
+sudo: false 
 
 before_install: 
  - gem install codecov
+ - pip insyall coveragepy
 install:
  - gem install jekyll
  - gem install jekyll-seo-tag
 script:
- - jekyll build
+ - coverage jekyll build
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
