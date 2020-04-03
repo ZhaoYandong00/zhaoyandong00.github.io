@@ -1,16 +1,13 @@
 language: ruby
-language: python
-python: 3.7
 sudo: false 
 
 before_install: 
  - gem install codecov
- - pip3 install coverage
 install:
  - gem install jekyll
  - gem install jekyll-seo-tag
 script:
- - coverage jekyll build
+ - jekyll build
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
