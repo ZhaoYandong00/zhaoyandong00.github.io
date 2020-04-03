@@ -1,4 +1,5 @@
 language: ruby
 
 script:
+- gem install jekyll bundler
 - jekyll build
