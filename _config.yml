@@ -65,12 +65,13 @@ defaults:
       status: Completed #状态
       
 exclude:
- - LICENSE.md
+ - LICENSE
  - README.md
  - "*.cdf"
  - "*.nb"
  - "*.bk"
  - "*.draft.md"
+
 
 # Build settings
 plugins:
