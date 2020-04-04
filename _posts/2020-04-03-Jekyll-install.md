@@ -37,7 +37,7 @@ sudo gem install bundler jekyll
 ruby -v
 gem -v
 bundler -v
-jelyll -v
+jekyll -v
  ```
 
 # 设置jekyll 网站
