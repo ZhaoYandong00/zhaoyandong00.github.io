@@ -2,6 +2,7 @@
 title: BLE--CC2541的入门之加密OAD
 categories: CC2541 BLE
 tags:  BLE CC2541 ble OAD 加密
+description: 介绍关于CC2541的OAD加密方法
 ---
 #  OAD带加密
 - 只用OAD的话任何人都可以对你的设备进行升级操作，这样会导致一些不必要的损坏
@@ -26,7 +27,7 @@ tags:  BLE CC2541 ble OAD 加密
 - 更改加密秘钥
 ![key][key]
 - 在`bem_main.c`文件里把`aesKey`的内容更改为自己的
-```C
+```c
 static const uint8 aesKey[KEY_BLENGTH] = {
   // This dummy key must be replaced by a randomly generated key that is kept secret.
   0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F
@@ -136,7 +137,7 @@ SBL_SECURE=FALSE
 
 ### 修改加密秘钥
 - 在`sbl_exec.c`文件中把把`aesKey`的内容更改为和BEM工程的一致
-```
+```c
 static const uint8 aesKey[KEY_BLENGTH] = {
 #if defined AES_TEST_VECS
   0xC0, 0xC1, 0xC2, 0xC3, 0xC4, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF

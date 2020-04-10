@@ -24,6 +24,7 @@ github_username:  Zhaoyandong00
 github_repo: zhaoyandong00.github.io
 # markdown
 markdown: kramdown
+
 kramdown:
  footnote_nr: 1
  entity_output: as_char
@@ -64,6 +65,8 @@ defaults:
       numbering: true #文章标号
       status: Completed #状态
       
+permalink: /:year-:month-:day/:title
+
 exclude:
  - LICENSE
  - README.md

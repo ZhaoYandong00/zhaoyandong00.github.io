@@ -2,7 +2,7 @@
 title:  Jekyll 在windows下的安裝
 categories:  Jekyll githubpages
 tags: Jekyll  blog  githubpages
-highlight:  true
+description: Jekyll的安装和部署在github pages上的方法
 ---
 #   安装Ruby 环境
 
