@@ -14,6 +14,13 @@ sudo apt-get install -y nodejs gcc g++ make python
 node -v
 sudo npm install -g npm
 ```
+### 错误处理
+- 若安装出现错误，就清理缓存解决
+
+```
+npm cache verify
+npm cache clean --force
+```
 
 ## 安装Homebridge
 ```
@@ -25,4 +32,6 @@ sudo npm install -g --unsafe-perm homebridge homebridge-config-ui-x
 ```
 sudo hb-service install --user homebridge
 ```
+# 自定义插件
+
 
