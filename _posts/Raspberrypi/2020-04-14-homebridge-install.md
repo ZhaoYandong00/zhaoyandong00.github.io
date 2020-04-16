@@ -137,7 +137,7 @@ miio discover
         "homebridge": ">=0.2.0"
       },
     "keywords":[
-    "hombridge-plugin"
+    "hombridge-plugin",
     "illuminance"
     ],
     "dependnices":{
@@ -261,4 +261,26 @@ illuminance.prototype = {
         }.bind(this));
     }
 };
+```
+###  config.json
+```json
+{
+"bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:50",
+        "port": 55373,
+        "pin": "033-73-874"
+    },
+"accessories": [
+        {
+            "accessory": "illuminance",
+            "name": "illuminance"
+        }
+    ]
+}
+
+```
+###  调试
+```
+DEBUG=* homebridge -D -U ~/homebridge-dev/config/ -P ~/homebridge-dev/plugin/
 ```
