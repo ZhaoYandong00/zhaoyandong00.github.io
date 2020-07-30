@@ -55,7 +55,7 @@ defaults:
       layout: "post"
       toc: true    #目录生成器
       mathjax: true #数学公式
-      mermaid: false #流程图
+      mermaid: true #流程图
       numbering: true #文章标号
       status: Completed #状态
       

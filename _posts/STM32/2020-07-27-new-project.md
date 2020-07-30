@@ -164,6 +164,7 @@ description: 在keil MDK5上新建STM32工程
 
 ![ManageruntimeRes][ManageruntimeRes]
 
+## 添加代码
 - 新建文件，保存为`main.c`,把`main.c`添加到工程
 - 新建my_gpio.c并添加到工程，新建my_gpio.h文件
 
@@ -298,6 +299,8 @@ void LED_GPIO_Config(void);
 #endif /* __LED_H */
 
 ```
+
+## 验证
 - 编译并下载到开发板，会看到开发板上两个LED灯在交替闪烁
 
 
