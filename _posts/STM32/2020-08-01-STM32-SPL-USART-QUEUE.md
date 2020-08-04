@@ -408,10 +408,7 @@ static void Process_Data(Channel *ch, uint8_t *array, uint16_t data_len)
             }
             if (data_len > len)
             {
-                for (i = len; i < data_len; i++)
-                {
-                    array[i - len] = array[i];
-                }
+                memmove(array,array+len,data_len - len);
                 Process_Data(ch, array, data_len - len);
             }
         }
@@ -429,10 +426,7 @@ static void Process_Data(Channel *ch, uint8_t *array, uint16_t data_len)
                 }
                 if (len > 0)
                 {
-                    for (i = len; i < data_len; i++)
-                    {
-                        array[i - len] = array[i];
-                    }
+                    memmove(array,array+len,data_len - len);
                     Process_Data(ch, array, data_len - len);
                 }
             }
