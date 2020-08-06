@@ -4,13 +4,14 @@ categories: STM32 USART DMA
 tags: STM32 SPL USART UART QUEUE DMA
 description: SPL库串口通信之DMA发送/接收不定长数据
 ---
-# # 添加库函数
+# 添加库函数
 - 打开 `Manage Run-Time Environment`
 - 选择`Device->StdPeriph Drivers->DMA`
 
 # 修改串口初始化
 ## 添加DMA相关宏
 - `my_usart.h`
+
 ```c
 #ifndef __USART_H
 #define __USART_H
