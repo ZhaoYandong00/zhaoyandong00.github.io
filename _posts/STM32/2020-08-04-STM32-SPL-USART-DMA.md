@@ -60,6 +60,7 @@ description: SPL库串口通信之DMA发送/接收不定长数据
 #endif
 #if USE_USART_DMA_RX  || USE_USART_DMA_TX
 #define USART_DR_ADDRESS (USART1_BASE+0x04)
+#define USART_DMA_CLK   RCC_AHBPeriph_DMA1
 #endif
 
 
@@ -123,7 +124,7 @@ static void USARTx_DMA_RX_TX_Config(void)
 {
     DMA_InitTypeDef DMA_InitStructure;
     // 开启DMA时钟
-    RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1, ENABLE);
+    RCC_AHBPeriphClockCmd(USART_DMA_CLK, ENABLE);
     // 设置DMA源地址：串口数据寄存器地址*/
     DMA_InitStructure.DMA_PeripheralBaseAddr = USART_DR_ADDRESS;
     // 外设地址不增
@@ -290,6 +291,27 @@ void Usart_SendArray(USART_TypeDef *pUSARTx, uint8_t *array, uint16_t num)
         ;
 #endif
 }
+///重定向c库函数printf到串口，重定向后可使用printf函数
+int fputc(int ch, FILE *f)
+{
+    /* 发送一个字节数据到串口 */
+		USART_SendData(DEBUG_USARTx, (uint8_t) ch);
+		
+		/* 等待发送完毕 */
+		while (USART_GetFlagStatus(DEBUG_USARTx, USART_FLAG_TXE) == RESET)
+		{}
+    return (ch);
+}
+
+///重定向c库函数scanf到串口，重写向后可使用scanf、getchar等函数
+int fgetc(FILE *f)
+{
+    /* 等待串口输入数据 */
+    while (USART_GetFlagStatus(DEBUG_USARTx, USART_FLAG_RXNE) == RESET);
+
+    return (int)USART_ReceiveData(DEBUG_USARTx);
+}
+
 
 ```
 ### DMA结构体分析
