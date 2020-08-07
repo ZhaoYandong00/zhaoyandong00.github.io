@@ -453,13 +453,39 @@ typedef struct
 #define DMA_M2M_Enable                     ((uint32_t)0x00004000) //使能存储器到存储器
 #define DMA_M2M_Disable                    ((uint32_t)0x00000000) //禁止存储器到存储器
 ```
+### DMA通道选择
+
+|外设|DMA1_Channel1|DMA1_Channel2|DMA1_Channel3|DMA1_Channel4|DMA1_Channel5|DMA1_Channel6|DMA1_Channel7|
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|ADC1|ADC1|
+|SPI/I<sup>2</sup>S||SPI1_RX|SPI1_TX|SPI/I<sup>2</sup>S2_RX|SPI/I<sup>2</sup>S_TX|
+|USART||USART3_TX|USART3_RX|USART1_TX|USART1_RX|USART2_RX|USART2_TX|
+|I<sup>2</sup>C||||I<sup>2</sup>C2_TX|I<sup>2</sup>C2_RX|I<sup>2</sup>C1_TX|I<sup>2</sup>C1_RX|
+|TIM1||TIM1_CH1|TIM1_CH2|TIM1_CH4<BR/>TIM1_TRIG<BR/>TIM1_COM|TIM1_UP|TIM1_CH3|
+|TIM2|TIM2_CH3|TIM2_UP|||TIM2_CH1||TIM2_CH2<BR/>TIM2_CH4|
+|TIM3||TIM3_CH3|TIM3_CH4<BR/>TIM3_UP|||TIM3_CH1<BR/>TIM3_TRIG|
+|TIM4|TIM4_CH1|||TIM4_CH2|TIM4_CH3||TIM4_UP|
+
+
+|外设|DMA2_Channel1|DMA2_Channel2|DMA2_Channel3|DMA2_Channel4|DMA2_Channel5|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|ADC3|||||ADC3|
+|SPI/I<sup>2</sup>S3|SPI/I<sup>2</sup>S3_RX|SPI/I<sup>2</sup>S3_TX|
+|UART4|||UART4_RX||UART4_TX|
+|SDIO||||SDIO|
+|TIM5|TIM5_CH4<BR/>TIM5_TRIG|TIM5_CH3<BR/>TIM5_UP||TIM5_CH2|TIM5_CH1|
+|TIM6/DAC_Channel_1|||TIM6_UP/DAC_Channel_1|
+|TIM7/DAC_Channel_2||||TIM7_UP/DAC_Channel_2|
+|TIM8|TIM8_CH3<BR/>TIM8_UP|TIM8_CH4<BR/>TIM8_TRIG<BR/>TIM8_COM|TIM8_CH1||TIM8_CH2|
+
+
 
 # 发送函数修改
 
 ```c
 #if USE_USART_DMA_TX
 /**
- * @brief  USART GPIO 配置,工作参数配置
+ * @brief  发送8位的数组
  * @param  无
  * @retval 无
  */
