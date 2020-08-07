@@ -28,9 +28,9 @@ description: SPL库高级定时器PWM带互补输出
 <td style="text-align: center">PA8</td>
 <td style="text-align: center">PC6</td>
 <td style="text-align: center">PA0/PA15</td>
-<td style="text-align: center">PA0</td>
 <td style="text-align: center">PA6/PC6/PB4</td>
 <td style="text-align: center">PB6/PD12</td>
+<td style="text-align: center">PA0</td>
 </tr>
 <tr>
 <th style="text-align: center">CH1N</th>
@@ -46,9 +46,9 @@ description: SPL库高级定时器PWM带互补输出
 <td style="text-align: center">PA9</td>
 <td style="text-align: center">PC7</td>
 <td style="text-align: center">PA1/PB3</td>
-<td style="text-align: center">PA1</td>
 <td style="text-align: center">PA7/PC7/PB5</td>
 <td style="text-align: center">PB7/PD13</td>
+<td style="text-align: center">PA1</td>
 </tr>
 <tr>
 <th style="text-align: center">CH2N</th>
@@ -64,9 +64,9 @@ description: SPL库高级定时器PWM带互补输出
 <td style="text-align: center">PA10</td>
 <td style="text-align: center">PC8</td>
 <td style="text-align: center">PA2/PB10</td>
-<td style="text-align: center">PA2</td>
 <td style="text-align: center">PB0/PC8</td>
 <td style="text-align: center">PB8/PD14</td>
+<td style="text-align: center">PA2</td>
 </tr>
 <tr>
 <th style="text-align: center">CH3N</th>
@@ -82,18 +82,18 @@ description: SPL库高级定时器PWM带互补输出
 <td style="text-align: center">PA11</td>
 <td style="text-align: center">PC9</td>
 <td style="text-align: center">PA3/PB11</td>
-<td style="text-align: center">PA3</td>
 <td style="text-align: center">PB1/PC9</td>
 <td style="text-align: center">PB9/PD15</td>
+<td style="text-align: center">PA3</td>
 </tr>
 <tr>
 <th style="text-align: center">ETR</th>
 <td style="text-align: center">PA12</td>
 <td style="text-align: center">PA0</td>
 <td style="text-align: center">PA0/PA15</td>
-<td style="text-align: center"></td>
 <td style="text-align: center">PD2</td>
 <td style="text-align: center">PE0</td>
+<td style="text-align: center"></td>
 </tr>
 <tr>
 <th style="text-align: center">BKIN</th>
