@@ -212,10 +212,12 @@ typedef struct
   * @{
   */
 
-#define TIM_ICSelection_DirectTI           ((uint16_t)0x0001) /*!< TIM Input 1, 2, 3 or 4 is selected to be connected to IC1, IC2, IC3 or IC4, respectively */ 
-#define TIM_ICSelection_IndirectTI         ((uint16_t)0x0002) /*!< TIM Input 1, 2, 3 or 4 is selected to be connected to IC2, IC1, IC4 or IC3, respectively. */
-#define TIM_ICSelection_TRC                ((uint16_t)0x0003) /*!< TIM Input 1, 2, 3 or 4 is selected to be connected to TRC. */
+#define TIM_ICSelection_DirectTI           ((uint16_t)0x0001) /*!< TIM Input 1, 2, 3 or 4 is selected to be connected to IC1, IC2, IC3 or IC4, respectively */ //CCx通道被配置为输入，ICx映射在TIx上
+#define TIM_ICSelection_IndirectTI         ((uint16_t)0x0002) /*!< TIM Input 1, 2, 3 or 4 is selected to be connected to IC2, IC1, IC4 or IC3, respectively. *///CCx通道被配置为输入，IC1,IC2,IC3,IC4映射在TI2,TI1,TI4,TI3上
+#define TIM_ICSelection_TRC                ((uint16_t)0x0003) /*!< TIM Input 1, 2, 3 or 4 is selected to be connected to TRC. *///：CCx通道被配置为输入，ICx映射在TRC上。此模式仅工作在内部触发器输入被选中时(由TIMx_SMCR寄存器的TS位选择)
 ```
+注：CCXS仅在通道关闭时(TIMx_CCER寄存器的CCXE=’0’)才是可写的
+
 - 输入捕获预分频器`TIM_ICPrescaler`
 
 ```c

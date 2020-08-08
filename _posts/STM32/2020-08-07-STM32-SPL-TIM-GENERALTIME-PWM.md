@@ -122,10 +122,10 @@ static void GENERAL_TIM_Mode_Config(void)
 
     /*--------------------输出比较结构体初始化-------------------*/
     // 占空比配置
-    uint16_t CCR1_Val = 49;
-    uint16_t CCR2_Val = 39;
-    uint16_t CCR3_Val = 29;
-    uint16_t CCR4_Val = 19;
+    uint16_t CCR1_Val = 50;
+    uint16_t CCR2_Val = 40;
+    uint16_t CCR3_Val = 30;
+    uint16_t CCR4_Val = 20;
 
     TIM_OCInitTypeDef  TIM_OCInitStructure;
     // 配置为PWM模式1
@@ -199,10 +199,10 @@ TIM_ARRPreloadConfig(GENERAL_TIM, ENABLE);
 ```c
 uint16_t count=1000000/freq; //计算ARR值
 TIM_SetAutoreload(GENERAL_TIM, count-1); //设置ARR
-TIM_SetCompare1(GENERAL_TIM,count*duty1/100-1);//1通道占空比
-TIM_SetCompare2(GENERAL_TIM,count*duty2/100-1);//2通道占空比
-TIM_SetCompare3(GENERAL_TIM,count*duty3/100-1);//3通道占空比
-TIM_SetCompare4(GENERAL_TIM,count*duty4/100-1);//4通道占空比
+TIM_SetCompare1(GENERAL_TIM,count*duty1/100);//1通道占空比
+TIM_SetCompare2(GENERAL_TIM,count*duty2/100);//2通道占空比
+TIM_SetCompare3(GENERAL_TIM,count*duty3/100);//3通道占空比
+TIM_SetCompare4(GENERAL_TIM,count*duty4/100);//4通道占空比
 ```
 # 调试
 ## 添加PWM头文件`main.c`和调用初始化PWM
