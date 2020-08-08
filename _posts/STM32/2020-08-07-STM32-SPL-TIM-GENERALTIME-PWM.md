@@ -179,10 +179,10 @@ void Set_General_PWM_FREQ(uint16_t freq,uint8_t duty1,uint8_t duty2,uint8_t duty
 {
     uint16_t count=1000000/freq;
     TIM_SetAutoreload(GENERAL_TIM, count-1);
-    TIM_SetCompare1(GENERAL_TIM,count*duty1/100-1);
-    TIM_SetCompare2(GENERAL_TIM,count*duty2/100-1);
-    TIM_SetCompare3(GENERAL_TIM,count*duty3/100-1);
-    TIM_SetCompare4(GENERAL_TIM,count*duty4/100-1);
+    TIM_SetCompare1(GENERAL_TIM,count*duty1/100);
+    TIM_SetCompare2(GENERAL_TIM,count*duty2/100);
+    TIM_SetCompare3(GENERAL_TIM,count*duty3/100);
+    TIM_SetCompare4(GENERAL_TIM,count*duty4/100);
 }
 
 ```
