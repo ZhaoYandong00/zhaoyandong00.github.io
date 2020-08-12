@@ -2166,3 +2166,39 @@ USART的各种中断事件被连接到同一个中断向量，有以下各种中
 |IrDA|支持|支持|支持|支持|支持|
 |LIN|支持|支持|支持|支持|支持|
 
+# SPI
+
+<table >
+<thead>
+<tr>
+<th style="text-align: center" >中断事件</th>
+<th style="text-align: center" >事件标志</th>
+<th style="text-align: center" >使能位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center" >发送缓冲器空标志</td>
+<td style="text-align: center" >TXE</td>
+<td style="text-align: center" >TXEIE</td>
+</tr>
+<tr>
+<td style="text-align: center" >接收缓冲器非空标志</td>
+<td style="text-align: center" >RXNE</td>
+<td style="text-align: center" >RXNEIE</td>
+</tr>
+<tr>
+<td style="text-align: center" >主模式失效事件</td>
+<td style="text-align: center" >MODF</td>
+<td style="text-align: center"  rowspan="3">ERRIE</td>
+</tr>
+<tr>
+<td style="text-align: center" >溢出错误</td>
+<td style="text-align: center" >OVR</td>
+</tr>
+<tr>
+<td style="text-align: center" >CRC错误标志</td>
+<td style="text-align: center" >CRCERR</td>
+</tr>
+</tbody>
+</table>
