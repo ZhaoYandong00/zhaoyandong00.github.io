@@ -3,6 +3,7 @@ title: 树莓派上HomeBridge 的安装
 categories: 树莓派 HomeBridge 
 tags: 树莓派 HomeBridge Raspberrypi
 description: 树莓派上安装HomeBridge
+edit: 2020-04-15
 ---
 [参考连接](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian)
 #  安装
