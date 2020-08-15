@@ -20,7 +20,7 @@ description: SPL库串口通信之队列
 //数据主体
 typedef struct
 {
-    char  *head; 	//缓冲区头指针
+    uint8_t  *head; 	//缓冲区头指针
     uint16_t len; //接收到的数据长度
 
 } QUEUE_DATA_TYPE ;
@@ -58,7 +58,7 @@ QUEUE_DATA_TYPE  node_data[QUEUE_NODE_NUM];
 QueueBuffer rx_queue;
 
 //队列缓冲区的内存池
-__align(4) char node_buff[QUEUE_NODE_NUM][QUEUE_NODE_DATA_LEN] ;
+__align(4) uint8_t node_buff[QUEUE_NODE_NUM][QUEUE_NODE_DATA_LEN] ;
 
 
 
