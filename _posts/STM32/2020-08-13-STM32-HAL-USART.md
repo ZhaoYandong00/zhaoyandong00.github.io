@@ -583,7 +583,7 @@ extern uint8_t rx_n;
         HAL_UART_Transmit(&huart1,&rx_len,1,0xffff);
         rx_n=0;
         __HAL_UART_CLEAR_IDLEFLAG(&huart1);
-        HAL_UART_AbortReceive(&huart1);
+        HAL_UART_AbortReceive(&huart1);//如果不是接收完成，需要手动中止上一次接收，才能开始下一次接收，不然无法开启新的接收
         HAL_UART_Receive_IT(&huart1,rx_data,50);
     }
     /* USER CODE END USART1_IRQn 1 */
