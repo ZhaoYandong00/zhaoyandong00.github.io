@@ -11,6 +11,7 @@ description: HAL库串口通信之DMA
 - **`DMA_Settings`**
 - 配置USART1_RX 优先级——`High` 模式——`Normal` 存储器地址自增 外设不自增 数据字节——`Byte`
 - 配置USART1_TX 优先级——`High` 模式——`Normal` 存储器地址自增 外设不自增 数据字节——`Byte`
+- 一般接收用`Circular`模式，发送用`Normal`模式，因为我们用的数据队列，存储器地址在改变，所以采用`Normal`单次模式
 
 ## 生成代码
 - 点击**`GENERATE CODE`**自动生成代码
