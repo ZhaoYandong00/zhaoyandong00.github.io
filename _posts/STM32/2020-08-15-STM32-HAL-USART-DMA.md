@@ -1,5 +1,5 @@
 ---
-title: STM32硬件库HAL库串口通信使用DMA发送/接收不定长数据
+title: STM32硬件层HAL库串口通信使用DMA发送/接收不定长数据
 categories: STM32 HAL USART DMA
 tags: STM32 CUBE HAL USART DMA
 description: HAL库串口通信之DMA

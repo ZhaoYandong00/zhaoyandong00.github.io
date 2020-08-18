@@ -1,5 +1,5 @@
 ---
-title: STM32硬件库HAL库串口通信之队列
+title: STM32硬件层HAL库串口通信之队列
 categories: STM32 CUBE HAL USART QUEUE
 tags: STM32 CUBE HAL USART QUEUE
 description: HAL库串口通信之队列
