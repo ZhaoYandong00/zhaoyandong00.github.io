@@ -1,5 +1,5 @@
 ---
-title: STM32硬件库HAL库串口通信之队列
+title: STM32硬件层HAL库串口通信之队列
 categories: STM32 CUBE HAL USART QUEUE
 tags: STM32 CUBE HAL USART QUEUE
 description: HAL库串口通信之队列
@@ -144,17 +144,17 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     {
         if(rx_queue.write!=rx_queue.write_using)
         {
-            rx_queue.elems[(rx_queue.write_using)&(rx_queue.size - 1)]->len=QUEUE_NODE_DATA_LEN-huart1.RxXferCount;
+            rx_queue.elems[(rx_queue.write_using)&(rx_queue.size - 1)]->len=QUEUE_NODE_DATA_LEN;
             cbWriteFinish(&rx_queue);
         }
 			  data_p = cbWrite(&rx_queue);
         if(data_p!=NULL)
         {
-            HAL_UART_Receive_IT(&huart1,data_p->head,QUEUE_NODE_DATA_LEN);
+            HAL_UART_Receive_IT(huart,data_p->head,QUEUE_NODE_DATA_LEN);
         }
         else
         {
-            HAL_UART_Receive_IT(&huart1,&rx_data,1);
+            HAL_UART_Receive_IT(huart,&rx_data,1);
         }
     }
 }
