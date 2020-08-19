@@ -13,7 +13,6 @@ description: HAL库通用定时器PWM输出
 - 选择**Channel2**——`PWM Generation CH2`
 - 选择**Channel3**——`PWM Generation CH3`
 - 选择**Channel4**——`PWM Generation CH4`
-- 选择`Activate-Break-Input`
 - **`Parameter Settings`**配置
 - 配置预分频器72分频——`71`，自动重载数值——`99`，计数模式——`UP`，自动重载预装载——`Enable` **CKD**-`No Division`
 - 配置**Channel 1**:**Mode**——`PWM Mode 1`, **Pulse**——`50`,**Output compare preload**——`Enable`,**Fast Mode**——`Disable`,**CH Polarity**——`High`
@@ -27,7 +26,7 @@ description: HAL库通用定时器PWM输出
 
 # 库函数解析
 
-- 使能比较输出通道`void TIM_CCxChannelCmd(TIM_TypeDef *TIMx, uint32_t Channel, uint32_t ChannelState)`
+- 使能通道`void TIM_CCxChannelCmd(TIM_TypeDef *TIMx, uint32_t Channel, uint32_t ChannelState)`
 
 
 # 代码移植
