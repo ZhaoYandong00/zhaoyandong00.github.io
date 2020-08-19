@@ -14,14 +14,14 @@
 #
 # Site settings
 
-title: ZYD Blog
+title: 
 email: 
-description: This is ZYD's blog site
+description: 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zhaoyandong.ml" 
-github_username:  Zhaoyandong00
-github_repo: zhaoyandong00.github.io
+url: "" 
+github_username:  
+github_repo: 
 # markdown
 markdown: kramdown
 
@@ -37,14 +37,14 @@ kramdown:
 highlighter: rouge
 
 author:
-  name:           ZYD
+  name:           
   picture:        
   email:          
   description:    
-  github:         https://github.com/zhaoyandong00
-  clustrmap:      87hfQmj_jXpYSg7znLJKy-SmYXU77n5FiwcnAiiCGVI
-  baidupv:        ff98ee8574d00f67dfedb5fd35de77bb
-  disqus:         f843ea51c4883ca8e2d435cfa3ed7b6b
+  github:         
+  clustrmap:      
+  baidupv:        
+  disqus:         
 
 defaults:
   -
