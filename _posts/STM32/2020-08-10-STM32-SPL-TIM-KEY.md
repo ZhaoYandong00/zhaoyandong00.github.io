@@ -89,20 +89,20 @@ void  MY_TIM_IRQHandler (void)
     if ( TIM_GetITStatus( MY_TIM, TIM_IT_Update) != RESET )
     {
         time++;
-			  if(key_state1==1)
-				{
-					if(++key_time1>=KEY_BUFFETING_TIME)
-					{
-						key_state1=2;
-					}
-				}
-				if(key_state2==1)
-				{
-					if(++key_time2>=KEY_BUFFETING_TIME)
-					{
-						key_state2=2;
-					}
-				}
+        if(key_state1==1)
+        {
+            if(++key_time1>=KEY_BUFFETING_TIME)
+            {
+                key_state1=2;
+            }
+        }
+        if(key_state2==1)
+        {
+            if(++key_time2>=KEY_BUFFETING_TIME)
+            {
+                key_state2=2;
+            }
+        }
         TIM_ClearITPendingBit(MY_TIM , TIM_FLAG_Update);
     }
 }
@@ -123,7 +123,7 @@ void  MY_TIM_IRQHandler (void)
             /*LED2反转*/
             LED2_TOGGLE;
         }
-````
+```
 
 # 调试
 - 编译之后下载到开发板
