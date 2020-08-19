@@ -14,7 +14,7 @@ description: HAL库TIM输入捕获
 - 选择`Internal Clock`
 - 选择**Channel1**——`Input Capture direct mode`
 - **`Parameter Settings`**配置
-- 配置预分频器72分频——`71`，自动重载数值——`65535`，计数模式——`UP`，自动重载预装载——`Enable` **CKD**-`No Division`
+- 配置预分频器72分频——`71`，自动重载数值——`65535`，计数模式——`UP`，自动重载预装载——`Disable` **CKD**-`No Division`
 - 配置**Channel 1**:极性选择——`Rising Edge`, IC选择——`Direct`,其余默认
 - **`NVIC Settings`**使能中断
 
@@ -26,7 +26,7 @@ description: HAL库TIM输入捕获
 - 点击**`GENERATE CODE`**自动生成代码
 - 等待生成完成
 
-#  TIME函数
+#  TIM函数
 ## 输入捕获结构体分析
 
 ```c
