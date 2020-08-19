@@ -11,7 +11,7 @@ description: HAL库ADC使用DMA多通道采集
 - 选择通道`IN11`,`Temperature Sensor Channel`,`Vrefint Channel`
 - **`Parameter Settings`**配置
 - 设置模式——`Independent mode`
-- 数据对齐——`Right alignment`,扫描模式——`Enabled`,连续转换——`Enabled`
+- 数据对齐——`Right alignment`,扫描模式——`Enabled`,连续转换——`Enabled`,间断转换模式——`Disable`
 - 规则转换——`Enable`,转换数量——`3`,外部触发——`Regular Conversion lanuched by software`
 - Rank1 通道——`Channel 11`,采样时间——`55.5 Cycles`
 - Rank2 通道——`Temperature Sensor Channel`,采样时间——`239.5 Cycles`

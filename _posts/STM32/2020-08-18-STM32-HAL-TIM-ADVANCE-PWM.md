@@ -301,6 +301,18 @@ typedef struct
 DMA设置必须设置成存储器到外设，每更新一次DMA向CCR1传输一次,改变输出占空比，会调用`HAL_TIM_PWM_PulseFinishedCallback`
 - 停止`HAL_StatusTypeDef HAL_TIM_PWM_Stop_DMA(TIM_HandleTypeDef *htim, uint32_t Channel)`
 
+- 以下几个函数和PWM函数一模一样可通用,只是PWM模式在初始化的时候会判断输出快速使能
+- 启动比较输出`HAL_StatusTypeDef HAL_TIM_OC_Start(TIM_HandleTypeDef *htim, uint32_t Channel)`
+- 停止比较输出`HAL_StatusTypeDef HAL_TIM_OC_Stop(TIM_HandleTypeDef *htim, uint32_t Channel)`
+
+- 启动比较输出带中断`HAL_StatusTypeDef HAL_TIM_OC_Start_IT(TIM_HandleTypeDef *htim, uint32_t Channel)`
+- 停止比较输出`HAL_StatusTypeDef HAL_TIM_OC_Stop_IT(TIM_HandleTypeDef *htim, uint32_t Channel)`
+
+- DMA启动比较输出`HAL_StatusTypeDef HAL_TIM_OC_Start_DMA(TIM_HandleTypeDef *htim, uint32_t Channel, uint32_t *pData, uint16_t Length)`
+- 停止比较输出`HAL_StatusTypeDef HAL_TIM_OC_Stop_DMA(TIM_HandleTypeDef *htim, uint32_t Channel)`
+
+
+
 # 代码移植
 ## 定时器应用
 - 在主函数初始化添加TIM启动
