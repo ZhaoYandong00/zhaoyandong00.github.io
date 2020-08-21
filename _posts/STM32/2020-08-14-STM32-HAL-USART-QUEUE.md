@@ -68,7 +68,7 @@ void USART1_IRQHandler(void)
     /* USER CODE END USART1_IRQn 1 */
 }
 ```
-# 修改传口接收完成回调函数
+# 修改串口接收完成回调函数
 - 在`main.c`文件添加头文件引用
 
 ```c
@@ -89,7 +89,7 @@ Channel ch[2];
 QUEUE_DATA_TYPE *data_p;
 /* USER CODE END 1 */
 ```
-- 初始化化数据对列
+- 初始化数据队列
 
 ```c
     /* USER CODE BEGIN 2 */
