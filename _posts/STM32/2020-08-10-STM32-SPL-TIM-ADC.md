@@ -323,10 +323,10 @@ void  ADC_DMA_IRQHandler(void)
 					vsense_adc+=ADC_ConvertedValue[i][1];
 					adc_adc+=ADC_ConvertedValue[i][0];
         }
-        VREF=1.2f*4096*ADC_BUFF_SIZE/vref_adc;
-        VSENSE=VREF*vsense_adc/ADC_BUFF_SIZE/4096;
-        temp=(1.43f-VSENSE)/4.3+25;
-        adcValue=VREF*adc_adc/ADC_BUFF_SIZE/4096;
+        VREF=1.2f*4095*ADC_BUFF_SIZE/vref_adc;
+        VSENSE=VREF*vsense_adc/ADC_BUFF_SIZE/4095;
+        temp=(1.43f-VSENSE)*1000/4.3+25;
+        adcValue=VREF*adc_adc/ADC_BUFF_SIZE/4095;
         printf( "\r\n The IC current tem= %.2fC\r\n", temp);
         printf( "\r\n The IC current VDDA= %.2fV\r\n", VREF);
         printf( "\r\n The IC current ADC= %.2fV\r\n", adcValue);

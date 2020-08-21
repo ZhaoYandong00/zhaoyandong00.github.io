@@ -293,17 +293,17 @@ void DMA1_Channel5_IRQHandler(void)
 ## 使能空闲中断和DMA中断
 
 ```c
-    LL_USART_EnableIT_IDLE(USART1);
+    LL_USART_EnableIT_IDLE(USART1); //使能空闲中断
     QUEUE_DATA_TYPE *data_p;
     data_p = cbWrite(&rx_queue);
-    LL_DMA_SetPeriphAddress(DMA1,LL_DMA_CHANNEL_4,LL_USART_DMA_GetRegAddr(USART1));
-    LL_DMA_SetPeriphAddress(DMA1,LL_DMA_CHANNEL_5,LL_USART_DMA_GetRegAddr(USART1));
-    LL_DMA_SetMemoryAddress(DMA1,LL_DMA_CHANNEL_5,(uint32_t)data_p->head);
-    LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_5,QUEUE_NODE_DATA_LEN);
-    LL_USART_EnableDMAReq_RX(USART1);
-    LL_USART_EnableDMAReq_TX(USART1);
-    LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_5);
-    LL_DMA_EnableIT_TC(DMA1,LL_DMA_CHANNEL_5);
+    LL_DMA_SetPeriphAddress(DMA1,LL_DMA_CHANNEL_4,LL_USART_DMA_GetRegAddr(USART1));//设置外设地址
+    LL_DMA_SetPeriphAddress(DMA1,LL_DMA_CHANNEL_5,LL_USART_DMA_GetRegAddr(USART1));//设置外设地址
+    LL_DMA_SetMemoryAddress(DMA1,LL_DMA_CHANNEL_5,(uint32_t)data_p->head);//设置接收存储器地址
+    LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_5,QUEUE_NODE_DATA_LEN);//设置接收长度
+    LL_USART_EnableDMAReq_RX(USART1);//使能DMA接收
+    LL_USART_EnableDMAReq_TX(USART1);//使能DMA发送
+    LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_5);//使能接收DMA
+    LL_DMA_EnableIT_TC(DMA1,LL_DMA_CHANNEL_5);//打开接收DMA中断
 ```
 ## 添加发送函数到主循环
 

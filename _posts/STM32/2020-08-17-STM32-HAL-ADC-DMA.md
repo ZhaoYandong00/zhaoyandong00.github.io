@@ -616,10 +616,10 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
     if(hadc->Instance==ADC1)
     {
-        VREF=1.2f*4096/ADC_ConvertedValue[2];
-        VSENSE=VREF*ADC_ConvertedValue[1]/4096;
-        temp=(1.43f-VSENSE)/4.3+25;
-        adcValue=VREF*ADC_ConvertedValue[0]/4096;
+        VREF=1.2f*4095/ADC_ConvertedValue[2];
+        VSENSE=VREF*ADC_ConvertedValue[1]/4095;
+        temp=(1.43f-VSENSE)*1000/4.3+25;
+        adcValue=VREF*ADC_ConvertedValue[0]/4095;
     }
 }
 ```

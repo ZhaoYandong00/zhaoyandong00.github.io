@@ -396,10 +396,10 @@ int main(void)
     while (1)
     {
         Delay(0xffffee);      // 延时
-        VREF=1.2f*4096/ADC_ConvertedValue[2];
-        VSENSE=VREF*ADC_ConvertedValue[1]/4096;
-        temp=(1.43f-VSENSE)/4.3+25;
-        adcValue=VREF*ADC_ConvertedValue[0]/4096;
+        VREF=1.2f*4095/ADC_ConvertedValue[2];
+        VSENSE=VREF*ADC_ConvertedValue[1]/4095;
+        temp=(1.43f-VSENSE)*1000/4.3+25;
+        adcValue=VREF*ADC_ConvertedValue[0]/4095;
 			  printf( "\r\n The IC current tem= %.2fC\r\n", temp);
 			  printf( "\r\n The IC current VDDA= %.2fV\r\n", VREF);
 			  printf( "\r\n The IC current ADC= %.2fV\r\n", adcValue);
