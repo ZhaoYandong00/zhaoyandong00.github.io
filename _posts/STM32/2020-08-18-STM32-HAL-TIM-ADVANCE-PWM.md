@@ -7,7 +7,7 @@ description: HAL库高级定时器PWM带互补输出
 # 配置TIM
 - 打开CUBE工程
 
-## 在**`Timers`**->**`TIM3`**配置
+## 在**`Timers`**->**`TIM1`**配置
 - 选择**Clock Source**——`Internal Clock`
 - 选择**Channel1**——`PWM Generation CH1 CH1N`
 - 选择`Activate-Break-Input`

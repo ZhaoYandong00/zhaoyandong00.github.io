@@ -1,33 +1,14 @@
 ---
-title: STM32硬件层HAL库通用定时器PWM输出
-categories: STM32 CUBE HAL TIM PWM
-tags: STM32 CUBE HAL TIM PWM
-description: HAL库通用定时器PWM输出
+title: STM32底层LL库通用定时器PWM输出
+categories: STM32 CUBE LL TIM PWM
+tags: STM32 CUBE LL TIM PWM
+description: LL库通用定时器PWM输出
+---
 ---
 # 配置TIM
-- 打开CUBE工程
-
-## 在**`Timers`**->**`TIM3`**配置
-- 选择**Clock Source**——`Internal Clock`
-- 选择**Channel1**——`PWM Generation CH1`
-- 选择**Channel2**——`PWM Generation CH2`
-- 选择**Channel3**——`PWM Generation CH3`
-- 选择**Channel4**——`PWM Generation CH4`
-- **`Parameter Settings`**配置
-- 配置预分频器72分频——`71`，自动重载数值——`99`，计数模式——`UP`，自动重载预装载——`Enable` **CKD**-`No Division`
-- 配置**Channel 1**:**Mode**——`PWM Mode 1`, **Pulse**——`50`,**Output compare preload**——`Enable`,**Fast Mode**——`Disable`,**CH Polarity**——`High`
-- 配置**Channel 2**:**Mode**——`PWM Mode 1`, **Pulse**——`40`,**Output compare preload**——`Enable`,**Fast Mode**——`Disable`,**CH Polarity**——`High`
-- 配置**Channel 3**:**Mode**——`PWM Mode 1`, **Pulse**——`30`,**Output compare preload**——`Enable`,**Fast Mode**——`Disable`,**CH Polarity**——`High`
-- 配置**Channel 4**:**Mode**——`PWM Mode 1`, **Pulse**——`20`,**Output compare preload**——`Enable`,**Fast Mode**——`Disable`,**CH Polarity**——`High`
-
-## 生成代码
-- 点击**`GENERATE CODE`**自动生成代码
-- 等待生成完成
-
-# 库函数解析
-
-- 使能通道`void TIM_CCxChannelCmd(TIM_TypeDef *TIMx, uint32_t Channel, uint32_t ChannelState)`
-
+- 和HAL库配置一样
+- 在高级设置里为**TIM3**选择`LL`库
+- 生成代码
 
 # 代码移植
 ## 添加更改频率和占空比函数
@@ -46,12 +27,12 @@ description: HAL库通用定时器PWM输出
   */
 void Set_General_PWM_FREQ(uint16_t freq,uint8_t duty1,uint8_t duty2,uint8_t duty3,uint8_t duty4)
 {
-    uint16_t count=1000000/freq;
-    __HAL_TIM_SET_AUTORELOAD(&htim3, count-1);
-    __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,count*duty1/100);
-    __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2,count*duty2/100);
-    __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3,count*duty3/100);
-    __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4,count*duty4/100);
+    uint16_t count=__LL_TIM_CALC_ARR(72000000,LL_TIM_GetPrescaler(TIM3),freq);
+    LL_TIM_SetAutoReload(TIM3,count);
+    LL_TIM_OC_SetCompareCH1(TIM3,(count+1)*duty1/100);
+    LL_TIM_OC_SetCompareCH2(TIM3,(count+1)*duty2/100);
+    LL_TIM_OC_SetCompareCH3(TIM3,(count+1)*duty3/100);
+    LL_TIM_OC_SetCompareCH4(TIM3,(count+1)*duty4/100);
 }
 /* USER CODE END 1 */
 ```
@@ -120,4 +101,4 @@ duty4=20;
 - PA7波形占空比从100-10变化,步进10
 - PB0波形占空比从5-95变化,步进5
 - PB1波形占空比从95-5变化,步进5
-- 和SPL库结果一致
+- 和HAL库结果一致
