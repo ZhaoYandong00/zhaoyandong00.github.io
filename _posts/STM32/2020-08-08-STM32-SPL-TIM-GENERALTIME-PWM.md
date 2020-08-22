@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库通用定时器PWM输出
+title: STM32标准外设库通用定时器PWM输出SPL篇11
 categories: STM32 TIM PWM
 tags: STM32 SPL TIM PWM
 description: SPL库通用定时器PWM输出

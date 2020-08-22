@@ -1,5 +1,5 @@
 ---
-title: STM32底层LL库TIM触发ADC
+title: STM32底层LL库TIM触发ADCLL篇12
 categories: STM32 CUBE LL ADC DMA TIM
 tags: STM32 CUBE LL ADC DMA TIM
 description: LL库TIM触发ADC

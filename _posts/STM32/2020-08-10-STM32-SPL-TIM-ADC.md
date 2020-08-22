@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库TIM触发ADC
+title: STM32标准外设库TIM触发ADCSPL篇14
 categories: STM32 ADC DMA TIM
 tags: STM32 SPL ADC DMA TIM
 description: SPL库定时采集ADC

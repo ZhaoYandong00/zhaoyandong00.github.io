@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库GPIO使用输入篇
+title: STM32标准外设库GPIO使用输入SPL篇3
 categories: STM32 SPL GPIO 
 tags: STM32 Keil GPIO
 description: SPL库GPIO输入

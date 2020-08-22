@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库TIM输入捕获
+title: STM32硬件层HAL库TIM输入捕获HAL篇11
 categories: STM32 CUBE HAL TIM CAPTURE
 tags: STM32 CUBE HAL TIM CAPTURE
 description: HAL库TIM输入捕获

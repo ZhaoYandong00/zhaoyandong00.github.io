@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库TIM做按键消抖
+title: STM32硬件层HAL库TIM做按键消抖HAL篇14
 categories: STM32 CUBE HAL TIM GPIO
 tags: STM32 CUBE HAL TIM GPIO
 description: HAL库TIM做按键消抖

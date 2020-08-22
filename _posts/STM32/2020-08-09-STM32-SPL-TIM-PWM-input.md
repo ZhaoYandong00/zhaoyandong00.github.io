@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库TIMPWM输入测量
+title: STM32标准外设库TIMPWM输入测量SPL篇13
 categories: STM32 TIM PWM
 tags: STM32 SPL TIM PWM DUTY
 description: SPL库TIMPWM输入测量

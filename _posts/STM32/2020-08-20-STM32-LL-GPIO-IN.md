@@ -1,5 +1,5 @@
 ---
-title: STM32底层LL库GPIO使用输入篇
+title: STM32底层LL库GPIO使用输入LL篇2
 categories: STM32 CUBE LL GPIO
 tags: STM32 CUBE LL GPIO
 description: LL库GPIO输入

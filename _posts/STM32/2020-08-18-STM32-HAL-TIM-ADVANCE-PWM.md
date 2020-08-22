@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库高级定时器PWM输出
+title: STM32硬件层HAL库高级定时器PWM输出HAL篇9
 categories: STM32 CUBE HAL TIM PWM
 tags: STM32 CUBE HAL TIM PWM
 description: HAL库高级定时器PWM带互补输出

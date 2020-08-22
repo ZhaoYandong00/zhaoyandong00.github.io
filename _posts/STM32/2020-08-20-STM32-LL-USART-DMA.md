@@ -1,5 +1,5 @@
 ---
-title: STM32底层LL库库串口通信使用DMA发送/接收不定长数据
+title: STM32底层LL库库串口通信使用DMA发送/接收不定长数据LL篇5
 categories: STM32 LL USART DMA
 tags: STM32 CUBE KL USART DMA
 description: LL库串口通信之DMA

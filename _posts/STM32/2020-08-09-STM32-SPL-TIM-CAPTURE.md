@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库TIM输入捕获
+title: STM32标准外设库TIM输入捕获SPL篇12
 categories: STM32 TIM CAPTURE
 tags: STM32 SPL TIM CAPTURE
 description: SPL库TIM输入捕获

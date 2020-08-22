@@ -1,5 +1,5 @@
 ---
-title: STM32底层LL库TIMPWM输入测量
+title: STM32底层LL库TIMPWM输入测量LL篇11
 categories: STM32 CUBE LL TIM PWM
 tags: STM32 CUBE LL TIM PWM DUTY
 description: LL库TIMPWM输入测量
