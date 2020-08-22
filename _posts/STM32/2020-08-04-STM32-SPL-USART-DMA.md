@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库串口使用DMA发送/接收不定长数据
+title: STM32标准外设库串口使用DMA发送/接收不定长数据SPL篇7
 categories: STM32 USART DMA
 tags: STM32 SPL USART UART QUEUE DMA
 description: SPL库串口通信之DMA发送/接收不定长数据

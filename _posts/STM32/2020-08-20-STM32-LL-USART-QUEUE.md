@@ -1,5 +1,5 @@
 ---
-title: STM32底层LL库串口通信之队列
+title: STM32底层LL库串口通信之队列LL篇4
 categories: STM32 CUBE LL USART QUEUE
 tags: STM32 CUBE LL USART QUEUE
 description: LL库串口通信之队列

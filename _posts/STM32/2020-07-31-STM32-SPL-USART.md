@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库串口通信
+title: STM32标准外设库串口通信SPL篇4
 categories: STM32 USART UART 
 tags: STM32 SPL USART UART
 description: SPL库串口通信

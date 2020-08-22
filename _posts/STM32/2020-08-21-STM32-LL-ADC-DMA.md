@@ -1,5 +1,5 @@
 ---
-title: STM32底层LL库ADC使用DMA多通道采集
+title: STM32底层LL库ADC使用DMA多通道采集LL篇6
 categories: STM32 CUBE LL ADC DMA
 tags: STM32 CUBE LL ADC DMA
 description: LL库ADC使用DMA多通道采集

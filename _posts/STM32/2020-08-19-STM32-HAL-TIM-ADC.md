@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库TIM触发ADC
+title: STM32硬件层HAL库TIM触发ADCHAL篇13
 categories: STM32 CUBE HAL ADC DMA TIM
 tags: STM32 CUBE HAL ADC DMA TIM
 description: HAL库TIM触发ADC

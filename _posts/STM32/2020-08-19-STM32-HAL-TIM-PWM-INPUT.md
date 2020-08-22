@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库TIMPWM输入测量
+title: STM32硬件层HAL库TIMPWM输入测量HAL篇12
 categories: STM32 CUBE HAL TIM PWM
 tags: STM32 CUBE HAL TIM PWM DUTY
 description: HAL库TIMPWM输入测量

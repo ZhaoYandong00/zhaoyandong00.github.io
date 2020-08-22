@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库串口通信
+title: STM32硬件层HAL库串口通信HAL篇4
 categories: STM32 CUBE HAL USART
 tags: STM32 CUBE HAL USART
 description: HAL库串口通信

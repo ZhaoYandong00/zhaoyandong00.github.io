@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库ADC使用DMA多通道采集
+title: STM32硬件层HAL库ADC使用DMA多通道采集HAL篇7
 categories: STM32 CUBE HAL ADC DMA
 tags: STM32 CUBE HAL ADC DMA
 description: HAL库ADC使用DMA多通道采集

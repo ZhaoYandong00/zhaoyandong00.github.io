@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库资源总结
+title: STM32标准外设库资源总结SPL篇17
 categories: STM32 SPL
 tags: STM32 SPL
 description: SPL库资源总结

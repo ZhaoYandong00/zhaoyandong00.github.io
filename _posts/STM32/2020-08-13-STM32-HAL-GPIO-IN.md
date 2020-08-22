@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库GPIO使用输入篇
+title: STM32硬件层HAL库GPIO使用输入HAL篇3
 categories: STM32 CUBE HAL GPIO
 tags: STM32 CUBE HAL GPIO
 description: HAL库GPIO输入

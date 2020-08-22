@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库ADC使用DMA多通道采集
+title: STM32标准外设库ADC使用DMA多通道采集SPL篇8
 categories: STM32 ADC DMA
 tags: STM32 SPL ADC DMA
 description: SPL库ADC采集

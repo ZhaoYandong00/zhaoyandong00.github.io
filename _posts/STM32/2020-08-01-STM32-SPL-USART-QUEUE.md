@@ -1,5 +1,5 @@
 ---
-title: STM32标准外设库串口通信之队列
+title: STM32标准外设库串口通信之队列SPL篇5
 categories: STM32 USART QUEUE
 tags: STM32 SPL USART UART QUEUE
 description: SPL库串口通信之队列

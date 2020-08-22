@@ -1,5 +1,5 @@
 ---
-title: STM32硬件层HAL库高级定时器PWM输出
+title: STM32硬件层HAL库高级定时器PWM输出HAL篇9
 categories: STM32 CUBE HAL TIM PWM
 tags: STM32 CUBE HAL TIM PWM
 description: HAL库高级定时器PWM带互补输出
@@ -7,7 +7,7 @@ description: HAL库高级定时器PWM带互补输出
 # 配置TIM
 - 打开CUBE工程
 
-## 在**`Timers`**->**`TIM3`**配置
+## 在**`Timers`**->**`TIM1`**配置
 - 选择**Clock Source**——`Internal Clock`
 - 选择**Channel1**——`PWM Generation CH1 CH1N`
 - 选择`Activate-Break-Input`
@@ -24,7 +24,7 @@ description: HAL库高级定时器PWM带互补输出
 - 点击**`GENERATE CODE`**自动生成代码
 - 等待生成完成
 
-#  TIME函数
+#  TIM函数
 ## 时钟配置结构体分析
 
 ```c
