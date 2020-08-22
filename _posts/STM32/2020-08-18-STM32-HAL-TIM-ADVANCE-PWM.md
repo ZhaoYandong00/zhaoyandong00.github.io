@@ -24,7 +24,7 @@ description: HAL库高级定时器PWM带互补输出
 - 点击**`GENERATE CODE`**自动生成代码
 - 等待生成完成
 
-#  TIME函数
+#  TIM函数
 ## 时钟配置结构体分析
 
 ```c
