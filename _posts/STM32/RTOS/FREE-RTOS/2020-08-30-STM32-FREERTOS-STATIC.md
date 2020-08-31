@@ -1,5 +1,5 @@
 ---
-title: 创建静态任务RTOS篇2
+title: 创建静态任务FREERTOS篇2
 categories: STM32 RTOS FREE_RTOS
 tags: STM32 RTOS FREE_RTOS
 description: RTOS创建静态任务

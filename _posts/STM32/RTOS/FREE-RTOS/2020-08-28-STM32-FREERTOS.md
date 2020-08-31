@@ -1,5 +1,5 @@
 ---
-title: 新建STM32工程RTOS篇1
+title: 新建STM32工程FREERTOS篇1
 categories: STM32 RTOS FREE_RTOS
 tags: STM32 RTOS FREE_RTOS
 description: 新建RTOS工程
@@ -77,8 +77,8 @@ extern uint32_t SystemCoreClock;
 /* Constants that describe the hardware and memory usage. */
 #define configCPU_CLOCK_HZ                    (SystemCoreClock)//系统时钟频率
 #define configTICK_RATE_HZ                    ((TickType_t)1000)//系统节拍中断的频率
-#define configTOTAL_HEAP_SIZE                 ((size_t)4096) //堆总量
-#define configMINIMAL_STACK_SIZE              ((uint16_t)256)//空闲任务堆栈大小
+#define configTOTAL_HEAP_SIZE                 ((size_t)36*1024) //堆总量，修改为36*1024
+#define configMINIMAL_STACK_SIZE              ((uint16_t)128)//空闲任务堆栈大小，修改为128
 #define configSUPPORT_DYNAMIC_ALLOCATION      1 //动态内存分配,1:启用 0:不使用 默认启用
 #define configSUPPORT_STATIC_ALLOCATION       0 //静态内存分配，1:启用 0:不使用 默认不使用，设置启用后，必须提供两个回调函数 vApplicationGetIdleTaskMemory（）提供用于RTOS空闲任务的内存，以及（如果configUSE_TIMERS设置为1）vApplicationGetTimerTaskMemory（）提供用于以下RTOS守护程序/计时器服务任务的内存
 
@@ -151,11 +151,11 @@ extern uint32_t SystemCoreClock;
 
 /* Interrupt priorities used by the kernel port layer itself.  These are generic
  * to all Cortex-M ports, and do not rely on any particular library functions. */
-#define configKERNEL_INTERRUPT_PRIORITY               (configLIBRARY_LOWEST_INTERRUPT_PRIORITY << (8 - configPRIO_BITS)) //内核中断优先级
+#define configKERNEL_INTERRUPT_PRIORITY               (configLIBRARY_LOWEST_INTERRUPT_PRIORITY << (8 - configPRIO_BITS)) //对需要配置的SysTick 与PendSV 进行偏移
 
 /* !!!! configMAX_SYSCALL_INTERRUPT_PRIORITY must not be set to zero !!!!
  * See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html. */
-#define configMAX_SYSCALL_INTERRUPT_PRIORITY          (configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY << (8 - configPRIO_BITS)) //系统最大中断优先级
+#define configMAX_SYSCALL_INTERRUPT_PRIORITY          (configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY << (8 - configPRIO_BITS)) //屏蔽优先级
 
 /* Set the following definitions to 1 to include the API function, or zero
  * to exclude the API function.  NOTE:  Setting an INCLUDE_ parameter to 0 is
