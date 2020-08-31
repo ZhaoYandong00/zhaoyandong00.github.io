@@ -8,7 +8,7 @@ description: RTOS创建静态任务
 ## 创建静态任务
 
 ```c
-xTaskCreateStatic(	TaskFunction_t pxTaskCode, 
+xTaskCreateStatic(  TaskFunction_t pxTaskCode, 
                     const char * const pcName,	/*lint !e971 Unqualified char types are allowed for strings and single characters only. */
                     const uint32_t ulStackDepth,
                     void * const pvParameters,
