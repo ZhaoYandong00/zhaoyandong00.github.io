@@ -103,7 +103,7 @@ extern uint32_t SystemCoreClock;
 #define configUSE_QUEUE_SETS                  1 //队列 1:启用 0:不使用
 #define configUSE_TASK_NOTIFICATIONS          1 //通知 1:启用 0:不使用 默认启用
 #define configUSE_TRACE_FACILITY              1 //可视化跟踪调试 1:启用 0:不使用 
-#define configUSE_TICKLESS_IDLE               1 //低功耗滴答 1:低功耗无滴答 0：始终保持滴答中断运行
+#define configUSE_TICKLESS_IDLE               0 //低功耗滴答 1:低功耗无滴答 0：始终保持滴答中断运行
 #define configUSE_APPLICATION_TASK_TAG        0 //任务标记
 #define configUSE_NEWLIB_REENTRANT            0 //newlib功能 1:启用 0:不使用
 #define configUSE_CO_ROUTINES                 0 //协程功能  1:启用 0:不使用
