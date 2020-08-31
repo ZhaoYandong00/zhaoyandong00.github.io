@@ -1,11 +1,11 @@
 ---
-title: 创建动态任务FREERTOS篇3
+title: 动态内存创建任务FREERTOS篇3
 categories: STM32 RTOS FREE_RTOS
 tags: STM32 RTOS FREE_RTOS
-description: RTOS创建动态任务
+description: RTOS动态内存创建任务
 ---
-# 动态任务常用函数
-## 创建动态任务函数
+# 动态内寸任务常用函数
+## 动态内存创建任务函数
 
 ```c
 BaseType_t xTaskCreate(TaskFunction_t pxTaskCode,
@@ -22,7 +22,7 @@ BaseType_t xTaskCreate(TaskFunction_t pxTaskCode,
 - 任务优先级`uxPriority`
 - 任务控制块指针`pxCreatedTask`
 
-# 创建动态任务
+# 动态内存创建任务
 - 在`FreeRTOSConfig.h`文件中修改静态内存分配改为0，动态内存分配改为1
 - 修改`main.c`
 

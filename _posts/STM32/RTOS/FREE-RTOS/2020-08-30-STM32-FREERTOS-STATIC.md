@@ -1,11 +1,11 @@
 ---
-title: 创建静态任务FREERTOS篇2
+title: 静态内存创建任务FREERTOS篇2
 categories: STM32 RTOS FREE_RTOS
 tags: STM32 RTOS FREE_RTOS
-description: RTOS创建静态任务
+description: RTOS静态内存创建任务
 ---
-# 静态任务常用函数
-## 创建静态任务
+# 静态内存任务常用函数
+## 静态内存创建任务
 
 ```c
 xTaskCreateStatic(  TaskFunction_t pxTaskCode, 
@@ -240,7 +240,7 @@ int fgetc(FILE *f)
 
 ```
 
-# 创建静态任务
+# 静态内存创建任务
 - 在`FreeRTOSConfig.h`文件中修改静态内存分配改为1
 - `main.c`文件
 
