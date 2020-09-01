@@ -9,6 +9,7 @@ description: SPL库串口通信
 
 * 打开 `Manage Run-Time Environment`
 * 选择 `Device->StdPeriph Drivers->USART`
+
 # 串口初始化
 
 ## 串口宏定义

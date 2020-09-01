@@ -4,8 +4,8 @@ categories: STM32 RTOS FREE_RTOS
 tags: STM32 RTOS FREE_RTOS
 description: RTOS动态内存创建任务
 ---
-# 动态内寸任务常用函数
-## 动态内存创建任务函数
+# 动态内存任务常用函数
+- 动态内存创建任务函数
 
 ```c
 BaseType_t xTaskCreate(TaskFunction_t pxTaskCode,
@@ -15,12 +15,11 @@ BaseType_t xTaskCreate(TaskFunction_t pxTaskCode,
                        UBaseType_t uxPriority,
                        TaskHandle_t * const pxCreatedTask )
 ```
-- 任务函数`pxTaskCode`
-- 任务名字`pcName`
-- 任务堆栈大小`usStackDepth`,单位为字
-- 传递给任务的函数`pvParameters`
-- 任务优先级`uxPriority`
-- 任务控制块指针`pxCreatedTask`
+- 任务切换`taskYIELD()`
+- 进入临界区`taskENTER_CRITICAL()`
+- 中断中进入临界区`taskENTER_CRITICAL_FROM_ISR()`
+- 退出临界区`taskEXIT_CRITICAL()`
+- 中断中退出临界区`taskEXIT_CRITICAL_FROM_ISR(uint32_t x)`
 
 # 动态内存创建任务
 - 在`FreeRTOSConfig.h`文件中修改静态内存分配改为0，动态内存分配改为1

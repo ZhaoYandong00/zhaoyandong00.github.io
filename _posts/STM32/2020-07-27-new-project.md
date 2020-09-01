@@ -1,7 +1,7 @@
 ---
 title: 新建STM32工程SPL篇1
 categories: STM32 Keil MDK
-tags: STM32 Keil MDK
+tags: STM32 Keil MDK SPL
 description: 在keil MDK5上新建STM32工程
 ---
 # 参考文档
