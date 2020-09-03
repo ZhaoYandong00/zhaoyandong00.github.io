@@ -9,7 +9,7 @@ description: 新建RTOS工程
 - [FreeRTOS-amazon](https://docs.aws.amazon.com/freertos/latest/userguide/what-is-freertos.html)
 
 # 新建工程
-- 和SPL新建库时一样
+- 和SPL库新建时一样
 
 ## 添加库函数
 
