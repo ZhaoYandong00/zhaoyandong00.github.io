@@ -13,6 +13,7 @@ description: UCOS创建任务
 - CPU使用率初始化`void OSStatTaskCPUUsageInit(OS_ERR *p_err)`
 - 重置最大关中断时间`CPU_TS_TMR CPU_IntDisMeasMaxCurReset(void)`
 - 延时`void OSTimeDly(OS_TICK ly,OS_OPT opt,OS_ERR *p_err)`
+- 延时小时、分钟、秒、毫秒`void OSTimeDlyHMSM(CPU_INT16U hours,CPU_INT16U minutes,CPU_INT16U seconds,CPU_INT32U milli,OS_OPT opt,OS_ERR *p_err)`
 - 创建任务
 
 ```c
@@ -51,7 +52,7 @@ void OSTaskCreate(OS_TCB      *p_tcb,
 - `os_cfg.h`打开任务删除
 
 ```c
-define OS_CFG_TASK_DEL_EN              1u   /* Include code for OSTaskDel()    
+define OS_CFG_TASK_DEL_EN              1u   /* Include code for OSTaskDel() */   
 ```
 - `cpu_cfg.h`中打开前导零函数
 
