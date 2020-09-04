@@ -34,17 +34,17 @@ void OSTaskCreate(OS_TCB      *p_tcb,
 - 更改任务优先级`void OSTaskChangePrio (OS_TCB *p_tcb,OS_PRIO prio_new,OS_ERR *p_err)`
 - 删除任务`void OSTaskDel(OS_TCB *p_tcb,OS_ERR *p_err)`
 - 更新任务内部信息`OS_MSG_QTY OSTaskQFlush(OS_TCB *p_tcb,OS_ERR *p_err)`
-- 等待消息`void *OSTaskQPend(OS_TICK timeout,OS_OPT opt,OS_MSG_SIZE *p_msg_size,CPU_TS *p_ts,OS_ERR p_err)`
-- 中止等待消息`CPU_BOOLEAN OSTaskQPendAbort(OS_TCB *p_tcb,OS_OPT opt,OS_ERR *p_err)`
-- 向任务发送消息`void OSTaskQPost(OS_TCB *p_tcb,void *p_void,OS_MSG_SIZE msg_size,OS_OPT opt,OS_ERR *p_err)`
+- 等待任务消息队列`void *OSTaskQPend(OS_TICK timeout,OS_OPT opt,OS_MSG_SIZE *p_msg_size,CPU_TS *p_ts,OS_ERR p_err)`
+- 中止等待任务消息队列`CPU_BOOLEAN OSTaskQPendAbort(OS_TCB *p_tcb,OS_OPT opt,OS_ERR *p_err)`
+- 向任务发送消息队列`void OSTaskQPost(OS_TCB *p_tcb,void *p_void,OS_MSG_SIZE msg_size,OS_OPT opt,OS_ERR *p_err)`
 - 获取任务寄存器值`OS_REG OSTaskRegGet(OS_TCB *p_tcb,OS_REG_ID id,OS_ERR *p_err)`
 - 获取任务ID`OS_REG_ID OSTaskRegGetID(OS_ERR *p_err)`
 - 设置任务寄存器值`void OSTaskRegSet(OS_TCB *p_tcb,OS_REG_ID id,OS_REG value,OS_ERR *p_err)`
 - 恢复任务`void OSTaskResume(OS_TCB *p_tcb,OS_ERR *p_err)`
 - 挂起任务`void OSTaskSuspend(OS_TCB *p_tcb,OS_ERR *p_err)`
-- 接收信号`OS_SEM_CTR OSTaskSemPend(OS_TICK timeout,OS_OPT opt,CPU_TS *p_ts,OS_ERR *p_err)`
-- 中止接收信号`CPU_BOOLEAN OSTaskSemPendAbort(OS_TCB *p_tcb,OS_OPT opt,OS_ERR *p_err)`
-- 发送信号`OS_SEM_CTR OSTaskSemPost(OS_TCB *p_tcb,OS_OPT opt,OS_ERR *p_err)`
+- 等待任务信号量`OS_SEM_CTR OSTaskSemPend(OS_TICK timeout,OS_OPT opt,CPU_TS *p_ts,OS_ERR *p_err)`
+- 中止等待任务信号量`CPU_BOOLEAN OSTaskSemPendAbort(OS_TCB *p_tcb,OS_OPT opt,OS_ERR *p_err)`
+- 释放任务信号量`OS_SEM_CTR OSTaskSemPost(OS_TCB *p_tcb,OS_OPT opt,OS_ERR *p_err)`
 - 设置信号计数器`OS_SEM_CTR OSTaskSemSet (OS_TCB *p_tcb,OS_SEM_CTR cnt,OS_ERR *p_err)`
 - 查询任务堆栈`void OSTaskStkChk(OS_TCB *p_tcb,CPU_STK_SIZE *p_free,CPU_STK_SIZE *p_used,OS_ERR *p_err)`
 
