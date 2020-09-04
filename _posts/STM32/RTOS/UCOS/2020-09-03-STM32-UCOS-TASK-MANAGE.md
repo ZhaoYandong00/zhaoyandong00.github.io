@@ -5,7 +5,7 @@ tags: STM32 RTOS UCOS
 description: UCOS任务管理
 ---
 # 程序
-- - `os_cfg.h`打开时间片轮转调度
+- `os_cfg.h`打开时间片轮转调度
 
 ```c
 #define OS_CFG_SCHED_ROUND_ROBIN_EN     1u   /* Include code for Round-Robin scheduling */ 
