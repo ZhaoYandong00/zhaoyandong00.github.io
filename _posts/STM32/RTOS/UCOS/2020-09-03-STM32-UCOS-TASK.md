@@ -45,7 +45,7 @@ void OSTaskCreate(OS_TCB      *p_tcb,
 - 接收信号`OS_SEM_CTR OSTaskSemPend(OS_TICK timeout,OS_OPT opt,CPU_TS *p_ts,OS_ERR *p_err)`
 - 中止接收信号`CPU_BOOLEAN OSTaskSemPendAbort(OS_TCB *p_tcb,OS_OPT opt,OS_ERR *p_err)`
 - 发送信号`OS_SEM_CTR OSTaskSemPost(OS_TCB *p_tcb,OS_OPT opt,OS_ERR *p_err)`
-- 清除信号计数器`OS_SEM_CTR OSTaskSemSet (OS_TCB *p_tcb,OS_SEM_CTR cnt,OS_ERR *p_err)`
+- 设置信号计数器`OS_SEM_CTR OSTaskSemSet (OS_TCB *p_tcb,OS_SEM_CTR cnt,OS_ERR *p_err)`
 - 查询任务堆栈`void OSTaskStkChk(OS_TCB *p_tcb,CPU_STK_SIZE *p_free,CPU_STK_SIZE *p_used,OS_ERR *p_err)`
 
 # 修改配置
@@ -115,8 +115,8 @@ define OS_CFG_TASK_DEL_EN              1u   /* Include code for OSTaskDel() */
 - `startup_stm32f10x_hd.s`修改以下两处
 
 ```nasm
-;                DCD     OS_CPU_PendSVHandler             ; PendSV Handler
-;                DCD     OS_CPU_SysTickHandler           ; SysTick Handler
+;                DCD     PendSV_Handler              ; PendSV Handler
+;                DCD     SysTick_Handler             ; SysTick Handler
                 DCD     OS_CPU_PendSVHandler             ; PendSV Handler
                 DCD     OS_CPU_SysTickHandler           ; SysTick Handler
 ```
