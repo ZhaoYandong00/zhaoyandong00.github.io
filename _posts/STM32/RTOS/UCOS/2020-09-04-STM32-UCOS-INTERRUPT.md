@@ -4,6 +4,13 @@ categories: STM32 RTOS UCOS
 tags: STM32 RTOS UCOS
 description: UCOS中断管理
 ---
+# 中断管理常用函数
+- 进入中断`void OSIntEnter(void)`
+- 退出中断`void OSIntExit(void)`
+- 复位当前屏蔽中断最大时间`CPU_TS_TMR CPU_IntDisMeasMaxCurReset(void)`
+- 获取当前屏蔽中断最大时间`CPU_TS_TMR CPU_IntDisMeasMaxCurGet(void)`
+- 获取屏蔽中断最大时间`CPU_TS_TMR CPU_IntDisMeasMaxGet(void)`
+
 # 配置
 - `cpu_cfg.h`打开CPU 屏蔽中断的时间
 
