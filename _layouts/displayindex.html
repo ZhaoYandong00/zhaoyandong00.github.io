@@ -23,9 +23,9 @@
       {%if page.title=="Posts Index" %}
       <div class="sidebar-div">
       {% assign count = 1 %}
-      {% for post in site.posts reversed%}
+      {% for post in site.posts %}
       {% assign date = post.date | date: '%Y-%m-%d' %}
-      {% assign ndate = post.next.date | date: '%Y-%m-%d' %}
+      {% assign ndate = post.previous.date | date: '%Y-%m-%d' %}
       {% if date != ndate %}
          <a class="sidebar-nav-item" href="#{{date}}">{{date}}({{ count }})</a>
          {% assign count = 1 %}
