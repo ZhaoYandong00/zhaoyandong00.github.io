@@ -307,6 +307,9 @@ td.rouge-gutter.gl{
     user-select: none;
 }
 
+span.site-tag{
+    line-height: normal;
+}
 
 blockquote {
     border-left: 4px solid #42b983;

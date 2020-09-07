@@ -120,6 +120,11 @@ body {
   margin-bottom: 0;
 }
 
+.sidebar-div{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   border-bottom: 1px solid rgba(255,255,255,.1);
