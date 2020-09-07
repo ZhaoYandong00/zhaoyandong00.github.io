@@ -301,6 +301,13 @@ span.highlight {
     font-weight: 500;
 }
 
+td.rouge-gutter.gl{
+    color: #008000;
+    text-align: center;
+    user-select: none;
+}
+
+
 blockquote {
     border-left: 4px solid #42b983;
     padding: 10px 0px 10px 15px;
