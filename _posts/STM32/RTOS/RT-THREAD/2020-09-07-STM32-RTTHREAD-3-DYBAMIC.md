@@ -1,5 +1,5 @@
 ---
-title: 动态内存创建任务RT-Thread篇3
+title: 动态内存创建线程RT-Thread篇3
 categories: STM32 RTOS RT-Thread
 tags: STM32 RTOS RT-Thread
 description: RT-Thread动态内存创建线程
