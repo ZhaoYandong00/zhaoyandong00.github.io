@@ -308,6 +308,12 @@ td.rouge-gutter.gl{
     width: 1%;
 }
 
+code.language-mermaid{
+    overflow-x: scroll;
+    display: block;
+	page-break-inside: avoid;
+}
+
 span.site-tag{
     line-height: normal;
 }
