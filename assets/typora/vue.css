@@ -305,6 +305,7 @@ td.rouge-gutter.gl{
     color: #008000;
     text-align: center;
     user-select: none;
+    width: 1%;
 }
 
 span.site-tag{
