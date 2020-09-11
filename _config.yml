@@ -19,7 +19,7 @@ email:
 description: 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: 
+url: "" 
 github_username:  
 github_repo: 
 # markdown
