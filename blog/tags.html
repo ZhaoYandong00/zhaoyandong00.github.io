@@ -23,7 +23,7 @@ title: Tag Index
   <dl class="tags-expo-posts">
     {% for post in tag[1] %}
     <dt>
-      <code>{{ post.date | date_to_string }}</code> 
+      <code>{{ post.date | date: '%Y-%m-%d' }}</code> 
 				<i class="fas fa-angle-double-right"></i>
 					<a href="{{ post.url }}">{{ post.title }}</a>
 						&nbsp;{% include status-indicator.html status=post.status%}

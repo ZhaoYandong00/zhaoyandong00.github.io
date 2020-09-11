@@ -301,6 +301,23 @@ span.highlight {
     font-weight: 500;
 }
 
+td.rouge-gutter.gl{
+    color: #008000;
+    text-align: center;
+    user-select: none;
+    width: 1%;
+}
+
+code.language-mermaid{
+    overflow-x: scroll;
+    display: block;
+	page-break-inside: avoid;
+}
+
+span.site-tag{
+    line-height: normal;
+}
+
 blockquote {
     border-left: 4px solid #42b983;
     padding: 10px 0px 10px 15px;

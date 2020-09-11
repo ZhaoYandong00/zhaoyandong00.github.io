@@ -8,10 +8,10 @@
    <div id="info">
       <div id="date">
          {% if page.edit %}
-         <p><code>Posted</code>: &nbsp; {{ page.date | date: '%B %d, %Y' }} </p>
-         <p><code>Edited</code>: &nbsp; {{ page.edit | date: '%B %d, %Y' }} </p>
+         <p><code>Posted</code>: &nbsp; <a href="{{site.url}}{{site.baseurl}}/blog/#{{ page.date | date: '%Y-%m-%d' }}" target="_blank">{{ page.date | date: '%Y-%m-%d' }} </a></p>
+         <p><code>Edited</code>: &nbsp; {{ page.edit | date: '%Y-%m-%d' }} </p>
          {% else %}
-         <p><code>Posted</code>: &nbsp; {{ page.date | date: '%B %d, %Y' }} </p>
+         <p><code>Posted</code>: &nbsp; <a href="{{site.url}}{{site.baseurl}}/blog/#{{ page.date | date: '%Y-%m-%d' }}" target="_blank">{{ page.date | date: '%Y-%m-%d' }} </a></p>
          {% endif %}
          {% if page.status %}
          <p><code>Status</code>: &nbsp; {% include status-indicator.html status=page.status%} </p>
@@ -22,7 +22,7 @@
          <p><code> Tags </code>: &nbsp;
             {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
-            <code><a href="{{site.url}}{{site.baseurl}}/blog/tags#{{ tag_name }}" target="_blank">{{ tag_name }}</a></code>
+            <code><a href="{{site.url}}{{site.baseurl}}/blog/tags#{{ tag_name | slugify }}" target="_blank">{{ tag_name }}</a></code>
             {% endfor %}
          </p>
       </div>
@@ -32,11 +32,27 @@
          <p><code> Categories </code>: &nbsp;
             {% for category in page.categories %}
             {% capture category_name %}{{ category }}{% endcapture %}
-            <code><a href="{{site.url}}{{site.baseurl}}/blog/categories#{{ category_name }}" target="_blank">{{ category_name }}</a></code>
+            <code><a href="{{site.url}}{{site.baseurl}}/blog/categories#{{ category_name | slugify}}" target="_blank">{{ category_name }}</a></code>
             {% endfor %}
          </p>
       </div>
       {% endif %}
+     
+      <p><code>Previous</code>: &nbsp; 
+         {% if page.previous != null %}
+         <code><a href="{{page.previous.url}}" target="_blank">{{ page.previous.title }}</a></code>
+         {%else%}
+         <code>NULL</code>
+         {% endif %}
+      </p>
+      <p><code>Next</code>: &nbsp; 
+         {% if page.next != null %}
+         <code><a href="{{page.next.url}}" target="_blank">{{ page.next.title  }}</a></code>
+         {%else%}
+         <code>NULL</code>
+         {% endif %}
+      </p>
+     
    </div>
    <hr>
 </div>
