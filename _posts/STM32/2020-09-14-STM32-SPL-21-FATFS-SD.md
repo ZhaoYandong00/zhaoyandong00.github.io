@@ -180,9 +180,9 @@ int main(void)
         {
             printf("format success\r\n");
             /* 格式化后，先取消挂载 */
-            res_sd = f_mount(NULL,"0:",1);
+            res_sd = f_mount(NULL,"1:",1);
             /* 重新挂载	*/
-            res_sd = f_mount(&fs,"0:",1);
+            res_sd = f_mount(&fs,"1:",1);
         }
         else
         {
