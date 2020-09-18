@@ -12,7 +12,7 @@ description: StemWin GUIBuidler的使用
 - 利用好GUIBuilder 可以更快的完成emWin 界面的初步设计
 - GUIBuilder在`STemWin\Software`内
 
-#　使用
+# 使用
 - 创建框架窗口,首先点击GUIBuilder 控件选择栏中的FrameWin 控件，创建一个框架窗口
 - 修改框架窗口尺寸,在控件属性框中，修改FrameWin 控件的尺寸
 - 设置标题栏高度,右键FrameWin 控件，选择Set title height，在控件属性框中新增选项中设置标题栏高度
