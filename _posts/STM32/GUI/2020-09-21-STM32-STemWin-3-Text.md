@@ -1,8 +1,8 @@
 ---
-title: 文本显示StemWin篇3
-categories: STM32 emWin StemWin
-tags: STM32 emWin StemWin
-description: StemWin文本显示
+title: 文本显示STemWin篇3
+categories: STM32 emWin STemWin
+tags: STM32 emWin STemWin
+description: STemWin文本显示
 ---
 # 文本显示常用函数
 ## 字符显示函数

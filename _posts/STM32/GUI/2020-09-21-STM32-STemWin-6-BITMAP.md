@@ -1,8 +1,8 @@
 ---
-title: 显示位图StemWin篇6
-categories: STM32 emWin StemWin
-tags: STM32 emWin StemWin
-description: StemWin显示位图
+title: 显示位图STemWin篇6
+categories: STM32 emWin STemWin
+tags: STM32 emWin STemWin
+description: STemWin显示位图
 ---
 # 显示位图常用函数
 ##　GUI_BITMAP 结构体

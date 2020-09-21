@@ -1,8 +1,8 @@
 ---
-title: 绘图StemWin篇5
-categories: STM32 emWin StemWin
-tags: STM32 emWin StemWin
-description: StemWin绘图
+title: 绘图STemWin篇5
+categories: STM32 emWin STemWin
+tags: STM32 emWin STemWin
+description: STemWin绘图
 ---
 # 绘图常用函数
 ## 绘制相关功能

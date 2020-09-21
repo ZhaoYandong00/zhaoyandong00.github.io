@@ -1,8 +1,8 @@
 ---
-title: 数值显示StemWin篇4
-categories: STM32 emWin StemWin
-tags: STM32 emWin StemWin
-description: StemWin数值显示
+title: 数值显示STemWin篇4
+categories: STM32 emWin STemWin
+tags: STM32 emWin STemWin
+description: STemWin数值显示
 ---
 # 数值显示常用函数
 ## 显示十进制数

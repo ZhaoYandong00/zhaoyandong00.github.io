@@ -1,8 +1,8 @@
 ---
-title: GUIBuidler的使用StemWin篇2
-categories: STM32 emWin StemWin
-tags: STM32 emWin StemWin
-description: StemWin GUIBuidler的使用
+title: GUIBuidler的使用STemWin篇2
+categories: STM32 emWin STemWin
+tags: STM32 emWin STemWin
+description: STemWin GUIBuidler的使用
 ---
 # GUIBuilder介绍
 - GUIBuilder 是Segger 公司为emWin 开发的一款界面编辑软件工具，用于显示界面的前期设计，或在不了解 C 语言的情况下设计界面
