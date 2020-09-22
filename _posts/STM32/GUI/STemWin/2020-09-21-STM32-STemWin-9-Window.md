@@ -57,7 +57,7 @@ struct WM_MESSAGE {
 <thead>
 <tr>
 <th style="text-align: center" bgcolor="#80FF00" >消息ID(MsgId)</th>
-<th style="text-align: center" bgcolor="#80FF00" > 描述(MsgId)</th>
+<th style="text-align: center" bgcolor="#80FF00" > 描述</th>
 </tr>
 </thead>
 <tbody>
