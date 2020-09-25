@@ -125,7 +125,7 @@ DRESULT disk_ioctl (
             break;
 
         case GET_SECTOR_COUNT:
-            *(DWORD * )buff = SDCardInfo.CardCapacity/SDCardInfo.CardBlockSize;
+            *(DWORD * )buff = SDCardInfo.CardCapacity/SD_BLOCKSIZE;
             break;
         case CTRL_SYNC :
             break;
