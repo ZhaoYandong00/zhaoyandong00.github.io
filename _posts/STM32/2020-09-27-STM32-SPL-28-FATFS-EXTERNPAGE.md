@@ -50,11 +50,12 @@ static WCHAR Extern_FLASH_convert (	/* Converted code, 0 means conversion error 
     /* 只加载一次 */
     if(ugbk_addr<0)
     {
-        ugbk_addr =GetResOffset(UGBKNAME)+RESOURCE_BASE_ADDR;
+        ugbk_addr =GetResOffset(UGBKNAME);
         if(ugbk_addr < 0)
         {
             return 0;
         }
+        ugbk_addr+=RESOURCE_BASE_ADDR;
     }
     if(dir)	//GBK 2 UNICODE
     {
