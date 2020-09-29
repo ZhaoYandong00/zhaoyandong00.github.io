@@ -104,7 +104,7 @@ int Create_XBF_Font(void)
 # 准备图标文件
 - `FatFs-icon.c`
 
-```
+```c
 /*********************************************************************
 *                SEGGER Microcontroller GmbH & Co. KG                *
 *        Solutions for real time microcontroller applications        *
