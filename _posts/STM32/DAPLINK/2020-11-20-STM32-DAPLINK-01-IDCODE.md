@@ -166,7 +166,7 @@ description: 资料
 <tr>
 <td style="text-align: center" rowspan="3">STM32F302</td>
 <td style="text-align: center">STM32F302x6<br/>STM32F302x8</td>
-<td style="text-align: center" rowspan="3">0x1BA0 1477</td>
+<td style="text-align: center" rowspan="3">0x2BA0 1477</td>
 <td style="text-align: center" rowspan="3">0xE004 2000</td>
 <td style="text-align: center">0x439</td>
 <td style="text-align: center" rowspan="3">0x1FFF F7CC</td>
