@@ -119,7 +119,7 @@ description: 资料
 <td style="text-align: center">0x442</td>
 </tr>
 <tr>
-<td style="text-align: center" rowspan="6">STM32F1</td>
+<td style="text-align: center" rowspan="7">STM32F1</td>
 <td style="text-align: center" rowspan="2">STM32F100xx</td>
 <td style="text-align: center">STM32F100x4<br/>STM32F100x6<br/>STM32F100x8<br/>STM32F100xB</td>
 <td style="text-align: center" rowspan="2">0x1BA0 1477</td>
@@ -133,13 +133,13 @@ description: 资料
 <td style="text-align: center">0x428</td>
 </tr>
 <tr>
-<td style="text-align: center" rowspan="4">STM32F10xxx</td>
+<td style="text-align: center" rowspan="5">STM32F10xxx</td>
 <td style="text-align: center">STM32F101x4<br/>STM32F101x6<br/>STM32F102x4<br/>STM32F102x6<br/>STM32F103x4<br/>STM32F103x6</td>
-<td style="text-align: center" rowspan="4"> 0x1BA0 1477</td>
-<td style="text-align: center" rowspan="4">0xE004 2000</td>
+<td style="text-align: center" rowspan="5"> 0x1BA0 1477</td>
+<td style="text-align: center" rowspan="5">0xE004 2000</td>
 <td style="text-align: center">0x412</td>
-<td style="text-align: center" rowspan="4">0x1FFF F7E0</td>
-<td style="text-align: center" rowspan="4">0x1FFF F7E8</td>
+<td style="text-align: center" rowspan="5">0x1FFF F7E0</td>
+<td style="text-align: center" rowspan="5">0x1FFF F7E8</td>
 </tr>
 <tr>
 <td style="text-align: center">STM32F101x8<br/>STM32F101xB<br/>STM32F102x8<br/>STM32F102xB<br/>STM32F103x8<br/>STM32F103xB</td>
@@ -148,6 +148,10 @@ description: 资料
 <tr>
 <td style="text-align: center">STM32F101xC<br/>STM32F101xD<br/>STM32F101xE<br/>STM32F103xC<br/>STM32F103xD<br/>STM32F103xE</td>
 <td style="text-align: center">0x414</td>
+</tr>
+<tr>
+<td style="text-align: center">STM32F101xF<br/>STM32F101xG<br/>STM32F103xF<br/>STM32F103xG<br/></td>
+<td style="text-align: center">0x430</td>
 </tr>
 <tr>
 <td style="text-align: center">STM32F105xx<br/>STM32F107xx</td>
