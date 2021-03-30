@@ -19,7 +19,7 @@ email:
 description: This is ZYD's blog site
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zhaoyandong.ml" 
+url: "" 
 github_username:  Zhaoyandong00
 github_repo: zhaoyandong00.github.io
 # markdown
